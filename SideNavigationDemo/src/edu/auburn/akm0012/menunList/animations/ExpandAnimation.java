@@ -25,42 +25,24 @@ public class ExpandAnimation extends Animation implements Animation.AnimationLis
 		setAnimationListener(this);
 	}
 
-	public void onAnimationend(Animation anim) {
+	public void onAnimationEnd(Animation anim) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void onAnimationrepeat(Animation anim) {
+	public void onAnimationRepeat(Animation anim) {
 		// TODO Auto-generated method stub
 		LayoutParams lyp =  view.getLayoutParams();
 		lyp.width = LastWidth +=ToWidth/20;
 		view.setLayoutParams(lyp);
 	}
 
-	public void onAnimationstart(Animation anim) {
+	public void onAnimationStart(Animation anim) {
 		// TODO Auto-generated method stub
 		LayoutParams lyp =  view.getLayoutParams();
 		lyp.width = 0;
 		view.setLayoutParams(lyp);
 		LastWidth = 0;
-	}
-
-	@Override
-	public void onAnimationEnd(Animation animation) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onAnimationRepeat(Animation animation) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onAnimationStart(Animation animation) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

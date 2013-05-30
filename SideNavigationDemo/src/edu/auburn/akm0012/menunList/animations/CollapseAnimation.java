@@ -26,41 +26,24 @@ public class CollapseAnimation extends Animation implements Animation.AnimationL
 		setAnimationListener(this);
 	}
 
-	public void onAnimationend(Animation anim) {
+	public void onAnimationEnd(Animation anim) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void onAnimationrepeat(Animation anim) {
+	public void onAnimationRepeat(Animation anim) {
 		// TODO Auto-generated method stub
 		LayoutParams lyp =  view.getLayoutParams();
 		lyp.width = lyp.width - ToWidth/20;
 		view.setLayoutParams(lyp);
 	}
 
-	public void onAnimationstart(Animation anim) {
+	public void onAnimationStart(Animation anim) {
 		// TODO Auto-generated method stub
 		LayoutParams lyp =  view.getLayoutParams();
 		LastWidth = lyp.width;
 	}
 
-	@Override
-	public void onAnimationEnd(Animation animation) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onAnimationRepeat(Animation animation) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onAnimationStart(Animation animation) {
-		// TODO Auto-generated method stub
-		
-	}
 
 }
 
